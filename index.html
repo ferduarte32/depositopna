@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gernerar de codigos de barras</title>
+    <title>Pop-up</title>
+    <script>
+        function abrirVentana() {
+            // Abrir una ventana emergente con el URL especificado y algunas opciones de configuración
+            window.open('codigobarra.html', 'codigos de barra', 'width=600,height=400,scrollbars=yes');
+        }
+    </script>
+</head>
+<body>
+    <h1>Cargar lotes de MACS</h1>
+    <textarea id="serialNumbers" placeholder="Pegue la lista de números de MACS aquí"></textarea>
+    <input type="text" id="model" placeholder="Modelo de equipo">
+    <button onclick="agregarEquipos()">Agregar Equipos</button>
+    <button onclick="abrirVentana()">Abrir Ventana Emergente</button> 
+
+    <script src="main.js"></script>
+</body>
+</html>
